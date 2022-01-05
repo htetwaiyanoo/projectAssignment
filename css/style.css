@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin:0;
+}
+:root{
+    --main-color:rgb(56, 198, 56);
+    --font-smaller:1rem;
+    --font-small:1.3rem;
+    --font-medium:1.9rem;
+    --font-large:3rem;
+    --color:#ccc;
+    --text-color:#fff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:2rem 5rem;
+    position: relative;
+    box-shadow: 1px 1px 20px var(--color);
+}
+
+.logo-brand {
+    color: var(--main-color);
+    font-size: var(--font-medium);
+    padding-left: 5rem;
+}
+
+.dark-mode{
+    position: absolute;
+    background: transparent;
+    border:none;
+    font-size: var(--font-small);
+    right:24rem;
+    top:34px;
+}
+
+nav > a{
+   text-decoration: none;
+   font-size: var(--font-small);
+   margin:5px;
+}
+
+nav > a:hover , .dark-mode:hover a{
+    color: var(--main-color);
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.hero-banner{
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(151, 231, 33, 0.8),
+        rgba(187, 255, 49, 0.8)
+    ), url(../photo/p1.jpg);
+    height: 500px;
+    background-position: center;
+    position: relative;
+}
+
+.hero-text{
+    position: absolute;
+    text-align: center;
+    left:30%;
+    top:40%; 
+}
+
+.text{
+    font-size: var(--font-large);
+    color:var(--text-color);
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    font-size: var(--font-smaller);
+    border-radius: 50px;
+    border:none;
+    margin-top: 6rem;
+    box-shadow: 1px 1px 10px var(--text-color);
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    transform: translateY(-15px);
+    color: var(--main-color);
+
+}
